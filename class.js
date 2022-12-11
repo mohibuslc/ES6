@@ -1,20 +1,28 @@
+// inharetance class 
 
+class Boss{
 
-class Student{
+    constructor(Boss_Name){
 
-    constructor(sID , sName){
-
-        this.id = sID ;
-        this.name= sName;
-
-
-        this.school =" Kolimunasa High School"; 
-
-   
+        this.Boss_Name=" Sundor-Pecio"
     }
-
 }
 
-const student1 = new Student(22, "Tina");
+// class  
 
-console.log(student1);
+class Child extends Boss{
+
+    constructor(eID , eName){
+
+            super()
+        this.ID = eID ; 
+
+        this.EmployeeName = eName ; 
+        this.CompanyName = "Sys-Soft" ; 
+
+    }
+}
+
+const Employee = new Child( 1009 , 'Jamal-Ahmed'); 
+
+console.log(Employee) ; 
